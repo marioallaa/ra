@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a meeting with the staff at Roseworth Limited, a leading accountancy practice in North Finchley, London.">
+    <meta name="keywords" content="Roseworth Limited, accountancy, North Finchley, London, bookkeeping, tax advisory, payroll, VAT">
+    <meta name="author" content="Roseworth Limited">
+    <meta property="og:title" content="Book a Meeting with Roseworth Limited">
+    <meta property="og:description" content="Schedule a meeting with our expert staff at Roseworth Limited, North Finchley, London. We offer comprehensive accountancy services.">
+    <meta property="og:image" content="icon.png">
+    <meta property="og:url" content="https://www.roseworthaccounting.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Book a Meeting with Roseworth Limited">
+    <meta name="twitter:description" content="Schedule a meeting with our expert staff at Roseworth Limited, North Finchley, London.">
+    <meta name="twitter:image" content="logo-placeholder.png">
+    <title>Book a Meeting with Roseworth Limited</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            max-height: 150x;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1; /* Ensures header is above the iframe */
+        }
+        .logo {
+            max-width: 100px;
+            margin-right: auto;
+        }
+        .title-container {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        h1.title {
+            font-size: 2rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            h1.title {
+                font-size: 1.5rem;
+            }
+        }
+        /* Style for iframe */
+        iframe {
+            position: fixed;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 0;
+            z-index: 0; /* Ensures iframe is below the header */
+        }
+        .iframe-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 60px; /* Adjust based on the header height */
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <img src="icon.png" alt="Roseworth Limited Logo" class="logo">
+        <h1 class="title">Meetings</h1>
+    </header>
+    <iframe src="https://outlook.office365.com/owa/calendar/RoseworthLimited@roseworthaccounting.com/bookings/"  width='100%' height='950vh' scrolling='yes' style='border:0'></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
